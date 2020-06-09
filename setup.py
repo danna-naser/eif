@@ -28,7 +28,7 @@ setup(
     cmdclass={'build_ext': build_ext},
     ext_modules=[Extension("eif",
                  sources=["_eif.pyx", "eif.cxx"],
-                 include_dirs=[numpy.get_include()]
+                 include_dirs=[numpy.get_include()],
                  language="c++")],
     scripts=[],
     py_modules=['eif_old', 'version'],
